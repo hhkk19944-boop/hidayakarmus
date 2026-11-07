@@ -1,7 +1,7 @@
 
 package speciallowerboundcode1;
 
-public class Holder <T> {
+public class Holder <T extends Number> {
      T item1;
     T item2; 
 
@@ -25,6 +25,13 @@ public class Holder <T> {
     public void setItem2(T item2) {
         this.item2 = item2;
     }
-    
+   public double calculatesum(){
+        return item1.doubleValue()+item2.doubleValue();
+        
+    }
+        public double calclataverage(){
+        return calculatesum()/2.0;
+        
+    }  
     
 }
